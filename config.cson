@@ -1,0 +1,28 @@
+"*":
+  "atom-beautify":
+    _analyticsUserId: "c7a8dfc9-7035-4fbf-a8e5-5f50762f0689"
+  core:
+    autoHideMenuBar: true
+    themes: [
+      "lunar-particle-ui"
+      "lunar-particle-syntax"
+    ]
+  editor:
+    fontSize: 16
+    invisibles: {}
+  "exception-reporting":
+    userId: "27a691ab-6462-162f-7dd0-f57af90874f8"
+  minimap:
+    plugins:
+      cursorline: true
+      "find-and-replace": true
+  "php-cs-fixer":
+    executablePath: "/home/mallon/.composer/vendor/fabpot/php-cs-fixer/php-cs-fixer"
+    executeOnSave: false
+    fixers: "psr-2"
+    phpExecutablePath: "/usr/bin/php"
+    showInfoNotifications: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false

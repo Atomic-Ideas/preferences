@@ -1,0 +1,154 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# s
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
+'.source.js':
+  'documentation block':
+    'prefix': 'dc'
+    'body': """/**
+            * $1
+            */"""
+
+  'console.log();':
+    'prefix': 'cl'
+    'body': 'console.log($1);'
+
+  'document.getElementById()':
+    'prefix': 'ge'
+    'body': '${1:document}.getElementById($2);'
+
+  'Create a new module with prototypal approach':
+    'prefix': 'mdp'
+    'body': """var $1 = (function() {
+              'use strict';
+
+              function $1() {
+
+              }
+              $1.prototype.${2:init} = function() {
+
+              }
+              return $1;
+            }());"""
+
+  'Create a new module':
+    'prefix': 'md'
+    'body': """var $1 = (function() {
+              'use strict';
+
+              $2
+              return {};
+            }());"""
+
+  'addEventListener':
+    'prefix': 'ae'
+    'body': """${1:document}.addEventListener('$2', function(e) {
+              $3
+            });"""
+
+'.source.php':
+  'Create a doc block':
+    'prefix': 'doc'
+    'body': """
+            /**
+             * Created by Thiago Mallon <thiagomallon@gmail.com>
+             */
+             """
+
+  'Create a namespace doc block':
+    'prefix': 'nmd'
+    'body': """
+            /**
+             * @package $1
+             */
+             """
+
+  'Create a class doc block':
+    'prefix': 'cld'
+    'body': """
+            /**
+             * Class $1
+             * @author Thiago Mallon <thiagomallon@gmail.com>
+             */
+             """
+
+  'Create a method doc block':
+    'prefix': 'mdoc'
+    'body': """
+            /**
+             * Method $1
+             * @param $2
+             * @return $3
+             */
+             """
+
+  'Create new public property':
+    'prefix': 'pbp'
+    'body': """
+            /**
+             * @var $1
+             */
+            public \$$1;
+            """
+
+  'Create new protected property':
+    'prefix': 'pdp'
+    'body': """
+            /**
+             * @var $1
+             */
+            protected \$$1;
+            """
+
+  'Create new public method with doc block':
+    'prefix': 'pbm'
+    'body': """
+            /**
+             * Method $1
+             * @return $2
+             */
+            public function $1()
+            {
+              $3
+            }"""
+
+  'Create new protected method with doc block':
+    'prefix': 'pdm'
+    'body': """
+            /**
+             *
+             */
+            protected function $1()
+            {
+              $2
+            }"""
+
+  'Create a new class with doc block and namespace':
+    'prefix': 'cls'
+    'body': """
+            /**
+             * @namespace $1
+             */
+             namespace $1;
+            /**
+             * Class $2
+             * @author Thiago Mallon <thiagomallon@gmail.com>
+             */
+            class $2
+            {
+              $3
+            }"""

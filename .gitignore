@@ -1,0 +1,13 @@
+#folder
+.apm/
+blob-store/
+compile-cache/
+packages/
+.node-gyp/
+storage/
+
+#files
+.npm
+dev
+init.coffee
+nohup.out
